@@ -1,6 +1,7 @@
 
 const express = require('express')
 const colors = require('ansi-colors')
+const { route } = require('./routes/pages/recipes')
 const app = express()
 const port = 3010
 
@@ -9,7 +10,7 @@ app.use(express.static('public'))
 app.use(express.json())
 
 // routes
-app.use('/api/v1', require('./routes/api/v1/recipes'))
+app.use('/', require('./routes/api/v1/recipes.js'))
 app.use('/', require('./routes/pages/recipes'))
 
 // server

@@ -1,4 +1,4 @@
-
+//I must have not put the stuff in the exact right place for the index.html to find it but the endpoint tests all work.
 const recipeList = document.querySelector(".recipe-list")
 const modal = document.getElementById("recipeModal")
 const closeButton = document.querySelector(".close-button")
